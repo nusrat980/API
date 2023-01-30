@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e37770bb-9c6d-460b-a3f7-0fe94d1ec2fc",
+		"name": "Project2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23740246"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/employees",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood&key=YOUR_API_KEY",
+					"protocol": "https",
+					"host": [
+						"maps",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"maps",
+						"api",
+						"directions",
+						"json"
+					],
+					"query": [
+						{
+							"key": "origin",
+							"value": "Disneyland"
+						},
+						{
+							"key": "destination",
+							"value": "Universal+Studios+Hollywood"
+						},
+						{
+							"key": "key",
+							"value": "YOUR_API_KEY"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"id\": 6,\r\n            \"employee_name\": \"Brielle Williamson\",\r\n            \"employee_salary\": 372000,\r\n            \"employee_age\": 60,\r\n            \"profile_image\": \"\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/update/6",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"update",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/delete/14",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"delete",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
